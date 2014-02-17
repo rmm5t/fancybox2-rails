@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+gemspec :path => "../"
+gem "railties", :github => "rails/rails", :branch => "3-2-stable"
+gem "rails", :github => "rails/rails", :branch => "3-2-stable"

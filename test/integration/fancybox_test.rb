@@ -4,7 +4,7 @@ class FancyboxTest < ActiveSupport::IntegrationCase
   test "fancybox is loaded and works" do
     visit root_path
 
-    fancybox = find('#fancybox-content')
+    fancybox = find('#something', :visible => false)
 
     assert !fancybox.visible?
 

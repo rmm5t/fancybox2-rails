@@ -14,4 +14,9 @@ class Fancybox2RailsTest < ActiveSupport::TestCase
     assert_not_nil @app.assets['jquery.fancybox.css']
     assert_not_nil @app.assets['fancybox.css']
   end
+
+  test "fancybox images are found as assets" do
+    assert_not_nil @app.assets['fancybox_sprite.png']
+    assert_not_nil @app.assets['fancybox_sprite@2x.png']
+  end
 end
